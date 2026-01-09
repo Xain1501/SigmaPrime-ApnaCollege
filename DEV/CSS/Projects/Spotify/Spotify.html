@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spotify-Search</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="Spotify.css">
+
+    <link rel="icon" type="image/x-icon" href="media/logo.png">
+  </head>
+
+  <body>
+    <div class="outer ">
+
+      <nav class=" navbar ">
+
+        <div id="navright" class="navdiv">
+          <img src="media/logo.png" alt="logo" id="logo">
+          <i class="fa-solid fa-house housefav"></i>
+        </div>
+
+        <div id="search" class="navdiv">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="What do you want to play?"
+            id="searchArea">
+          <p id="srchPara">|</p>
+          <i class="fa-regular fa-folder-open"></i>
+        </div>
+
+        <div id="navleft" class="navdiv">
+          <a href="/" class="navlink">
+            Premium
+          </a>
+          <a href="/" class="navlink">
+            Support
+          </a>
+          <a href="/" class="navlink">
+            Download
+          </a>
+          <span>|</span>
+          <a href="/" class="navlink">Install App</a>
+
+          <a href="/" class="navbutton" id="login"> Login</a>
+          <a href="/" class="navbutton" id="signup"> SignUp</a>
+
+        </div>
+
+      </nav>
+
+      <section>
+        <div>
+          <span>Your library </span>
+          <button>+</button>
+          <div class="sidebardiv">
+            <h4 class="sidebarhead">Create your first play list</h4>
+            <p class="sidebarpara">it's easy we'll help you</p>
+            <button>Create Playlist</button>
+          </div>
+          <div class="sidebardiv">
+            <h4 class="sidebarhead">Let's find some podcasts to follow</h4>
+            <p class="sidebarpara">We'll keep you updated on new episodes</p>
+            <button>Browse Podcasts</button>
+          </div>
+          <div>
+            <a href class="sidebarlink">Legal</a>
+            <a href class="sidebarlink">Safety&PrivacyCenter</a>
+            <a href class="sidebarlink">PrivacyPolicy</a>
+            <a href class="sidebarlink">Cookies</a>
+            <a href class="sidebarlink">AboutAds</a>
+            <a href class="sidebarlink">Accessibility</a>
+          </div>
+          
+        </section>
+
+        <main>
+          <h2 class="mainhead">Trending songs</h2>
+          <div class="maindiv">
+
+            <div class="mainlist">
+              <img class="mainimg" src="media/card1img.jpeg" alt="songpic">
+              <div class="maininfo">
+                <p class="mainname">main</p>
+                <p class="maindesc"> desc</p>
+              </div>
+            </div>
+
+            <div class="mainlist">
+              <img class="mainimg" src="media/card2img.jpeg" alt="songpic">
+              <div class="maininfo">
+                <p class="mainname">main</p>
+                <p class="maindesc"> desc</p>
+              </div>
+            </div>
+
+          </div>
+
+          <h2 class="mainhead">Popular Artist</h2>
+          <h2 class="mainhead">Popular Albums</h2>
+
+        </main>
+
+        <footer class="bg-primary">
+          <hr>
+          <div>lists</div>
+          <div>icons</div>
+          <hr>
+          <p>&copy;2026 SpotifyAB</p>
+        </footer>
+
+      </div>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    </body>
+
+  </html>
