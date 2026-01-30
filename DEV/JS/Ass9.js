@@ -55,3 +55,8 @@ btn.style.backgroundColor = "green";
 // [Please note that no other character apart from the allowed characters should be
 // visible in the heading]
 
+let body=  document.querySelector("body")
+
+let h2= body.appendChild("h2");
+let input= body.appendChild("input");
+
