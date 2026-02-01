@@ -1,0 +1,53 @@
+
+/* carousel css */
+
+.car {
+  height: 40vh;
+  overflow: hidden;
+}
+
+.car .carousel,
+.car .carousel-inner,
+.car .carousel-item {
+  height: 100%;
+}
+
+.car .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.carousel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+.carousel-item img {
+  height: 100%; /* Make carousel items and images take the full height of the inner container */
+  width: 100%;
+  object-fit: cover; /* This is key: it crops the image to cover the area while maintaining aspect ratio */
+  object-position: center; /* Centers the image within the container */
+}
+.carousel-caption {
+  z-index: 2;
+}
+
+
+/* footer css */
+.foot
+{
+  background-color:#173f73 ;
+  color: whitesmoke;
+}
+
+
+#copy
+{
+    background-color:white ;
+  color: blue;
+  padding-left: 5px;
+}
