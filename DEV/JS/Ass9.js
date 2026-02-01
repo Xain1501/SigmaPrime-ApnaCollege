@@ -69,6 +69,7 @@ input.placeholder = "Enter your name";
 // });
 
 
+
 input.addEventListener("input", (event) => {
   let currentValue = event.target.value;
 
