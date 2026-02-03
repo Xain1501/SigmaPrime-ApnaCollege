@@ -1,8 +1,11 @@
+hr {
+  margin: 0;
+}
 
 /* carousel css */
 
 .car {
-  height: 40vh;
+  height: 50vh;
   overflow: hidden;
 }
 
@@ -41,9 +44,71 @@
 /* appt section css */
 
 
+.appt{
+  background-color: #173f73; 
+  color: whitesmoke;
+}
+#nxt-book{
+background-color:#dfdfdf; 
+color:black;
+}
+#nxt-book:hover{
+  background-color: #173f73; 
+}
+.nxt-appt{
+  background-color: #173f73;
+  width: 200px;
 
+}
 
+/* Dental Excellence */
 
+#ProfPara {
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+#DentalExcellW{
+  
+  background-color: #dfdfdf;
+   padding: 3rem 3.5rem;
+   position: relative;
+}
+
+#DentalExcellW p {
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+  color:#1e2a35;
+}
+
+#DentalExcellB{
+  
+   background-color: #173f73;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.DocImgDiv {
+  height: 600px;
+  width: 100%;
+  padding: 2rem;
+}
+#DocImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+  transform: translateX(-40px);
+
+}
+
+.section-title {
+  color: #173f73;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
 
 /* footer css */
 .foot
@@ -55,7 +120,7 @@
 
 #copy
 {
-    background-color:white ;
+   background-color:white ;
   color: blue;
   padding-left: 5px;
 }

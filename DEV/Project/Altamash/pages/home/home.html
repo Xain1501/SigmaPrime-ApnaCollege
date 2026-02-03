@@ -202,10 +202,10 @@
             </button>
         </div>
     </section>
-    <section class="appt">
-        <div class="col-md-6">
-            <div class="d-flex flex-row align-items-center gap-3">
-                <h2>Book an Appointment</h2>
+    <section class="appt p-3 row">
+        <div class="col-md-9 ">
+            <div class="d-flex flex-row align-items-center gap-3 justify-content-center">
+                <h2 class="text-nowrap mb-0">Book an Appointment</h2>
                 <input type="date" class="form-control">
                 <select class="form-select">
                     <option selected disabled>-- Select Treatment --</option>
@@ -218,9 +218,34 @@
                         Root Canal Treatment/option>
                         <option>Wisdom Tooth Removal</option>
                     </select>
-                    <button class="btn btn-primary ">Next</button>
+                    <button id="nxt-book" class="btn btn-primary nxt-appt ">Next</button>
                 </div>
             </section>
+            <section class="row DentalExcell">
+                <div id="DentalExcellW" class="col-md-8">
+                    <h3 class="section-title ">Since 1980, a Legacy of Trust and Dental Excellence</h3>
+                    <p>At Altamash Dental Clinic, we’ve never just treated teeth — we’ve nurtured lifelong relationships built on care, compassion, and trust. What began over four decades ago as a single vision to offer ethical, high-quality care has grown into one of the most recognized dental institutions in Pakistan, trusted by families both locally and around the world.</p>
+                    <p>For over 4 decades, we’ve had the privilege of caring for multiple generations within the same families — watching children grow, return as adults, and bring in their own children. That continuity of care, built over time and trust, is what truly defines our practice. To me and my team, there’s no greater honor than being part of that journey.</p>
+                    <p>Our team of highly qualified specialists brings together diverse expertise across every field of dentistry — from orthodontics and implantology to cosmetic and pediatric care — all under one roof. Whether you’re here for a routine check-up, smile enhancement, or a complex full-mouth rehabilitation, your treatment is always tailored, compassionate, and backed by decades of clinical experience.</p>
+                    <p>We pair this human connection with cutting-edge technology. From digital scanners and 3D imaging to microscopic and laser-assisted procedures, our clinic is equipped with some of the most advanced dental innovations available today. This allows us to provide care that is not only precise and effective but also minimally invasive and comfortable.</p>
+                    <p>We also recognize that dental visits — especially for those traveling from abroad — come with expectations of safety, efficiency, and reliability. Over the years, we’ve proudly welcomed patients from North America, the UK, the Middle East, and beyond, who choose us for our combination of clinical excellence, personalized attention, and affordability. Our team supports each step of the journey, coordinating treatment schedules and ensuring a seamless, stress-free experience.</p>
+                    <p>We’ve designed our clinic to be a place where patients feel at ease- heard, respected, and cared for as individuals. We know that trust is earned, and we work every day to honor that trust by holding ourselves to the highest standards of dental care. That’s why we’ve created an environment rooted in empathy, where every patient is treated like family.</p>
+                    <p>As we move forward with dental excellence, our promise remains the same:
+                        <br>
+                        To serve with compassion. To treat every patient like family. And to never compromise on the principles that built this legacy.
+                    </p>
+                    <p>Thank you for being part of our story — and for trusting us with your smiles, generation after generation, from near and far.</p>
+                    <p id="ProfPara"> 
+                        — Prof. Dr. Mohammad Altamash
+                    </p>
+                </div>
+                <div class="col-md-4" id="DentalExcellB">
+                    <div class="DocImgDiv">
+                        <img id="DocImg" src="/media/dummyImages/doctor.png" alt="">
+                    </div>
+                </div>
+            </section>
+            
             <section>
                 <section>
                     <div class="container">
@@ -249,7 +274,7 @@
                                             Root Canal Treatment/option>
                                             <option>Wisdom Tooth Removal</option>
                                         </select>
-                                        <button class="btn btn-primary ">Next</button>
+                                        <button class="btn btn-primary nxt-appt">Next</button>
                                     </div>
                                 </div>
                             </div>
