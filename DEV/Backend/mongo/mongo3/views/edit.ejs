@@ -10,9 +10,9 @@
 
 
   <p> EDIT  your Chat  <%= chat._id %>!!!</p>
-  <p>This chat was send from <strong><%= chat.from %></strong>  to  <strong><%= chat.to %></</strong> </p>
+  <p>This chat was send from <strong><%= chat.from %></strong>  to  <strong><%= chat.to %></strong> </p>
 
-     <form method="PUT" action="/chats/<%= chat._id %>?_method=PUT">
+     <form method="POST" action="/chats/<%= chat._id %>?_method=PUT">
 
     <input name="from" value="<%= chat.from %>">
 
@@ -23,6 +23,17 @@
     <button>Edit</button>
 
     </form>
+
+<!-- 
+
+    <form method="POST" action ="/chats/<%= chat._id %>">
+      <textarea name="msg" rows="6" cols="52" id=""><%= chat.message %>
+      </textarea>
+      <br>
+      <button>Edit</button>
+    </form>
+
+   -->
 
 
 
