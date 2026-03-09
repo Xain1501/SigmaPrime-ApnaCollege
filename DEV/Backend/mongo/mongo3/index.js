@@ -23,16 +23,16 @@ async function main() {
   await mongoose.connect("mongodb://localhost:27017/whatsapp");
 }
 
-let chat1 = new Chat({
-  from: "Neha",
-  to: "Priya",
-  message: "Send me the notes bruhhh",
-  created_at: new Date(),
-});
+// let chat1 = new Chat({
+//   from: "Neha",
+//   to: "Priya",
+//   message: "Send me the notes bruhhh",
+//   created_at: new Date(),
+// });
 
-chat1.save().then((res) => {
-  console.log(res);
-});
+// chat1.save().then((res) => {
+//   console.log(res);
+// });
 
 //Index Route
 app.get("/chats", async (req, res) => {
@@ -91,6 +91,16 @@ app.put("/chats/:id", async (req, res) => {
   );
 
   console.log(updatedChat);
+  res.redirect("/chats");
+});
+
+//Delete route
+
+app.delete("/chats/:id", async (req, res) => {
+  let { id } = req.params;
+  let deletedChat = await Chat.findByIdAndDelete(id);
+
+  console.log(deletedChat);
   res.redirect("/chats");
 });
 
